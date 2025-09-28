@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlopeGuard - Alert Settings</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-mountain"></i>
+                    <span>SlopeGuard</span>
+                </div>
+                <p>Admin Dashboard</p>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Overview</a></li>
+                <li><a href="index.html"><i class="fas fa-users"></i> User Management</a></li>
+                <li><a href="sensors.html"><i class="fas fa-broadcast-tower"></i> Sensors</a></li>
+                <li><a href="alerts.html" class="active"><i class="fas fa-bell"></i> Alert Settings</a></li>
+                <li><a href="drone.html"><i class="fas fa-robot"></i> Drone/OEM</a></li>
+                <li><a href="reports.html"><i class="fas fa-chart-bar"></i> Reports</a></li>
+                <li><a href="roles.html"><i class="fas fa-user-shield"></i> Roles & Access</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="#"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+            </div>
+        </nav>
+        <main class="main-content">
+            <header class="main-header">
+                <div class="stats-cards">
+                    <!-- Stats cards can be copied or removed for this page -->
+                </div>
+                <div class="user-profile">
+                    <img src="placeholder.png" alt="Admin">
+                    <span>Manthan <i class="fas fa-chevron-down"></i></span>
+                </div>
+            </header>
+            <section class="user-table-section">
+                <div class="table-header">
+                    <h2>Alert Settings</h2>
+                    <div class="table-controls">
+                        <button class="filter-btn">Add New Alert</button>
+                    </div>
+                </div>
+                <table class="user-table">
+                    <thead>
+                        <tr>
+                            <th>Alert Name</th>
+                            <th>Condition</th>
+                            <th>Notify</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Critical Risk Detected</td>
+                            <td>Risk Level > 90%</td>
+                            <td>Email, SMS</td>
+                            <td><span class="status active">Enabled</span></td>
+                            <td><a href="#">Edit</a> | <a href="#">Disable</a></td>
+                        </tr>
+                        <tr>
+                            <td>Sensor Offline</td>
+                            <td>Status = Offline for > 1hr</td>
+                            <td>Email</td>
+                            <td><span class="status active">Enabled</span></td>
+                            <td><a href="#">Edit</a> | <a href="#">Disable</a></td>
+                        </tr>
+                        <tr>
+                            <td>Low Battery</td>
+                            <td>Battery < 20%</td>
+                            <td>Dashboard Only</td>
+                            <td><span class="status inactive">Disabled</span></td>
+                            <td><a href="#">Edit</a> | <a href="#">Enable</a></td>
+                        </tr>
+                        <tr>
+                            <td>Unusual Movement</td>
+                            <td>Displacement > 5cm/hr</td>
+                            <td>Email, SMS</td>
+                            <td><span class="status active">Enabled</span></td>
+                            <td><a href="#">Edit</a> | <a href="#">Disable</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlopeGuard - Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-mountain"></i>
+                    <span>SlopeGuard</span>
+                </div>
+                <p>Admin Dashboard</p>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Overview</a></li>
+                <li><a href="index.html" class="active"><i class="fas fa-users"></i> User Management</a></li>
+                <li><a href="sensors.html"><i class="fas fa-broadcast-tower"></i> Sensors</a></li>
+                <li><a href="alerts.html"><i class="fas fa-bell"></i> Alert Settings</a></li>
+                <li><a href="drone.html"><i class="fas fa-robot"></i> Drone/OEM</a></li>
+                <li><a href="reports.html"><i class="fas fa-chart-bar"></i> Reports</a></li>
+                <li><a href="roles.html"><i class="fas fa-user-shield"></i> Roles & Access</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="#"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+            </div>
+        </nav>
+        <main class="main-content">
+            <header class="main-header">
+                <div class="stats-cards">
+                    <div class="stat-card">
+                        <div class="card-icon users-icon"><i class="fas fa-users"></i></div>
+                        <div class="card-info">
+                            <p>Total Users</p>
+                            <h3>5,423</h3>
+                            <span><i class="fas fa-arrow-up"></i> 16% this month</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="card-icon members-icon"><i class="fas fa-user-friends"></i></div>
+                        <div class="card-info">
+                            <p>Members</p>
+                            <h3>1,893</h3>
+                            <span><i class="fas fa-arrow-down"></i> 1% this month</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="card-icon active-icon"><i class="fas fa-desktop"></i></div>
+                        <div class="card-info">
+                            <p>Active Now</p>
+                            <h3>189</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-profile">
+                    <img src="placeholder.png" alt="Admin">
+                    <span>Manthan <i class="fas fa-chevron-down"></i></span>
+                </div>
+            </header>
+            <section class="user-table-section">
+                <div class="table-header">
+                    <h2>All Users</h2>
+                    <div class="table-controls">
+                        <div class="search-bar">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search">
+                        </div>
+                        <button class="filter-btn">Filters <i class="fas fa-chevron-down"></i></button>
+                        <button class="sort-btn">Short by: Newest <i class="fas fa-chevron-down"></i></button>
+                    </div>
+                </div>
+                <table class="user-table">
+                    <thead>
+                        <tr>
+                            <th>User Name</th>
+                            <th>Location</th>
+                            <th>Phone Number</th>
+                            <th>Email</th>
+                            <th>Country</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jane Cooper</td>
+                            <td>New York City</td>
+                            <td>(225) 555-0118</td>
+                            <td>jane@microsoft.com</td>
+                            <td>United States</td>
+                            <td><span class="status active">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>Floyd Miles</td>
+                            <td>Tarawa</td>
+                            <td>(205) 555-0100</td>
+                            <td>floyd@yahoo.com</td>
+                            <td>Kiribati</td>
+                            <td><span class="status inactive">Inactive</span></td>
+                        </tr>
+                        <tr>
+                            <td>Ronald Richards</td>
+                            <td>Tel Aviv</td>
+                            <td>(302) 555-0107</td>
+                            <td>ronald@adobe.com</td>
+                            <td>Israel</td>
+                            <td><span class="status inactive">Inactive</span></td>
+                        </tr>
+                        <tr>
+                            <td>Marvin McKinney</td>
+                            <td>Tehran</td>
+                            <td>(252) 555-0126</td>
+                            <td>marvin@tesla.com</td>
+                            <td>Iran</td>
+                            <td><span class="status active">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>Jerome Bell</td>
+                            <td>Saint-Denis</td>
+                            <td>(628) 555-0129</td>
+                            <td>jerome@google.com</td>
+                            <td>Réunion</td>
+                            <td><span class="status active">Active</span></td>
+                        </tr>
+                         <tr>
+                            <td>Aryan Navghare</td>
+                            <td>Mumbai</td>
+                            <td>(406) 555-0120</td>
+                            <td>kathryn@microsoft.com</td>
+                            <td>India</td>
+                            <td><span class="status active">Active</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table-footer">
+                    <span>Showing data 1 to 8 of 256k entries</span>
+                    <div class="pagination">
+                        <a href="#" class="page-arrow"><i class="fas fa-chevron-left"></i></a>
+                        <a href="#" class="page-num active">1</a>
+                        <a href="#" class="page-num">2</a>
+                        <a href="#" class="page-num">3</a>
+                        <a href="#" class="page-num">4</a>
+                        <span class="page-dots">...</span>
+                        <a href="#" class="page-num">40</a>
+                        <a href="#" class="page-arrow"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

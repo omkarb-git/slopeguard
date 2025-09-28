@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>SlopeGuard - Sensors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-mountain"></i>
+                    <span>SlopeGuard</span>
+                </div>
+                <p>Admin Dashboard</p>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Overview</a></li>
+                <li><a href="index.html"><i class="fas fa-users"></i> User Management</a></li>
+                <li><a href="sensors.html" class="active"><i class="fas fa-broadcast-tower"></i> Sensors</a></li>
+                <li><a href="alerts.html"><i class="fas fa-bell"></i> Alert Settings</a></li>
+                <li><a href="drone.html"><i class="fas fa-robot"></i> Drone/OEM</a></li>
+                <li><a href="reports.html"><i class="fas fa-chart-bar"></i> Reports</a></li>
+                <li><a href="roles.html"><i class="fas fa-user-shield"></i> Roles & Access</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="#"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+            </div>
+        </nav>
+        <main class="main-content">
+            <header class="main-header">
+                <div class="stats-cards">
+                    <!-- Stats cards can be copied or removed for this page -->
+                </div>
+                <div class="user-profile">
+                    <img src="placeholder.png" alt="Admin">
+                    <span>Manthan <i class="fas fa-chevron-down"></i></span>
+                </div>
+            </header>
+            <section class="user-table-section">
+                <div class="table-header">
+                    <h2>All Sensors</h2>
+                    <div class="table-controls">
+                        <div class="search-bar">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search Sensors">
+                        </div>
+                        <button class="filter-btn">Filters <i class="fas fa-chevron-down"></i></button>
+                        <button class="sort-btn">Sort by: Status <i class="fas fa-chevron-down"></i></button>
+                    </div>
+                </div>
+                <table class="user-table">
+                    <thead>
+                        <tr>
+                            <th>Sensor ID</th>
+                            <th>Location</th>
+                            <th>Status</th>
+                            <th>Last Check-in</th>
+                            <th>Battery</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SG-001</td>
+                            <td>Zone A-1</td>
+                            <td><span class="status active">Online</span></td>
+                            <td>2025-09-28 16:30</td>
+                            <td>98%</td>
+                        </tr>
+                        <tr>
+                            <td>SG-002</td>
+                            <td>Zone B-2</td>
+                            <td><span class="status active">Online</span></td>
+                            <td>2025-09-28 16:32</td>
+                            <td>95%</td>
+                        </tr>
+                        <tr>
+                            <td>SG-003</td>
+                            <td>Zone C-3</td>
+                            <td><span class="status inactive">Offline</span></td>
+                            <td>2025-09-27 12:05</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>SG-004</td>
+                            <td>Zone D-4</td>
+                            <td><span class="status active">Online</span></td>
+                            <td>2025-09-28 16:31</td>
+                            <td>99%</td>
+                        </tr>
+                        <tr>
+                            <td>SG-005</td>
+                            <td>Zone A-2</td>
+                            <td><span class="status active">Online</span></td>
+                            <td>2025-09-28 16:29</td>
+                            <td>92%</td>
+                        </tr>
+                         <tr>
+                            <td>SG-006</td>
+                            <td>Zone C-1</td>
+                            <td><span class="status inactive">Maintenance</span></td>
+                            <td>2025-09-26 08:00</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table-footer">
+                    <span>Showing data 1 to 6 of 150 entries</span>
+                    <div class="pagination">
+                        <a href="#" class="page-arrow"><i class="fas fa-chevron-left"></i></a>
+                        <a href="#" class="page-num active">1</a>
+                        <a href="#" class="page-num">2</a>
+                        <a href="#" class="page-num">3</a>
+                        <span class="page-dots">...</span>
+                        <a href="#" class="page-num">25</a>
+                        <a href="#" class="page-arrow"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
